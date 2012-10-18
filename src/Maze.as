@@ -6,6 +6,7 @@ package
 	
 	import starling.core.Starling;
 	
+	[SWF(frameRate="60", width="1024", height="768", backgroundColor="0x000000")]
 	public class Maze extends Sprite
 	{
 		private var starling:Starling;
