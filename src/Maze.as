@@ -20,7 +20,7 @@ package
 			stage.scaleMode = StageScaleMode.NO_SCALE;
 			
 			// intialize Starling and launch the game loop
-			starling = new Starling(Game, stage);
+			starling = new Starling(Menu, stage);
 			starling.antiAliasing = 1;
 			starling.start();
 

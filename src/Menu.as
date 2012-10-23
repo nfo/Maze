@@ -11,7 +11,7 @@ package
 	import starling.text.BitmapFont;
 	import feathers.controls.Button;
 	
-	public class Game extends Sprite
+	public class Menu extends Sprite
 	{
 		[Embed(source="/../assets/images/atlas.xml",mimeType="application/octet-stream")]
 		public static const ATLAS_XML:Class;
@@ -22,7 +22,7 @@ package
 		[Embed(source="/../assets/images/tahoma30.fnt",mimeType="application/octet-stream")]
 		public static const FONT_XML:Class;
 		
-		public function Game()
+		public function Menu()
 		{
 			super();
 			this.addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
@@ -47,15 +47,15 @@ package
 		 * The index used to pick a label from the LABELS defined above.
 		 */
 		protected var labelIndex:int = 0;
-
+		
 		/**
 		 * When the button is clicked, it's label changes.
 		 */
 		protected static const LABELS:Vector.<String> = new <String>
-		[
-			"Hi. I'm Feathers!",
-			"Have a nice day."
-		];
+			[
+				"Hi. I'm Feathers!",
+				"Have a nice day."
+			];
 		
 		private function onAddedToStage(event:Event):void
 		{
